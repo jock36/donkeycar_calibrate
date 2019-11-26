@@ -48,6 +48,7 @@ master.geometry('400x300')
 master.configure(background = 'white')
 
 pwm_value = Scale(master, from_=200, to=500, orient=HORIZONTAL)
+pwm_value.set(340)
 pwm_value.pack()
 
 try_btn = Button(master, text='try',command=show_values)
